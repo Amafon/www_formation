@@ -83,9 +83,20 @@
         'nom'     => 'OGOU',
         'age'     => 38
       );
+
+      $age = 18;
+
+      if($age > 18){
+        echo "Vous êtes majeur!";
+      } elseif($age<18){
+        echo "Vous êtes mineur!";
+      } else{
+        echo "Je ne sais finalement pas!";
+      }
     ?>
     <p>Bonjour Monsieur <?=$personne['prenom']?>  <?=$personne['nom']?>! Dans 50 ans, vous aurez <?= $personne['age'] + 50 ?> ans.</p>
 
+    <p>Vous êtes : <?= $age > 18 ? 'Majeur':'Mineur'?></p>
 </body>
 </html>
 
